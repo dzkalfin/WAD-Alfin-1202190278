@@ -23,7 +23,7 @@
   $time = $_POST['time'];
   $durasi = $_POST['durasi'];
   $telpon = $_POST['telpon'];
-  $building = $_POST['BuildingType'];
+  $build = $_POST['BuildingTipe'];
   $service = $_POST['service[]'];
   $selisih = date('H:i', strtotime("$time+$durasi hour"));
   $list = array();
