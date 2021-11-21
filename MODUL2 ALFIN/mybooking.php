@@ -23,11 +23,13 @@
   $time = $_POST['time'];
   $durasi = $_POST['durasi'];
   $telpon = $_POST['telpon'];
-  $build = $_POST['BuildingTipe'];
+  $building = $_POST['BuildingType'];
   $service = $_POST['service[]'];
   $selisih = date('H:i', strtotime("$time+$durasi hour"));
   $list = array();
-
+  ?>
+  
+  <?php
   $nus = 2000;
   $gar = 1000;
   $gsg = 500;
@@ -69,9 +71,8 @@
   $gsg5 = $cat + $dec + $sound + ($gsg * $durasi);
   $gsg6 = $dec + $sound + ($gsg * $durasi);
   $gsg7 = $gsg * $durasi;
-
-
   ?>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

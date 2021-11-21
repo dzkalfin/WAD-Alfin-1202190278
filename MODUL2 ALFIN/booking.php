@@ -19,7 +19,7 @@
 
 <body>
   <?php 
-  $building=$_GET['BuildingType'];
+  $building=$_POST['BuildingType'];
   ?>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -48,7 +48,7 @@
         <img src="img/<?php echo $building?>.jpeg" class="card-img-top " style="padding-top: 25%;" alt="Nusantara Hall">
       </div>
       <div class="col">
-        <form action="home.php" method="POST">
+        <form action="mybooking.php" method="POST">
           <p class="my-2">Nama</p>
           <input name="Name" class="form-control mt-2" type="text" value="Alfin_1202190278" aria-label="readonly input example" readonly>
           <label for="date" class="form-label mt-2">Event Date</label>
@@ -87,7 +87,7 @@
             </label>
           </div>
           <div class="d-grid gap-2 my-2">
-            <button type="reset" class="btn btn-primary">Book</button>
+            <button type="submit" class="btn btn-primary">Book</button>
           </div>
         </form>
       </div>
