@@ -41,7 +41,7 @@ $result = $conn->query($sql);
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $row['judul_buku'] ?></h5>
                             <p class="card-text"><?php echo  $row['deskripsi'] ?></p>
-                            <a type="submit" class="btn btn-primary" name="submit" value="submit" href="Alfin_Halaman Detail Buku.php?id_buku=<?=$row['id_buku']?>">Tampilkan Lebih Lanjut</a>
+                            <a type="submit" class="btn btn-primary" name="submit" value="submit" href="Alfin_Halaman Detail Buku.php?id=<?=$row['id_buku']?>">Tampilkan Lebih Lanjut</a>
                         </div>
                     </div>
                 </div>
