@@ -37,11 +37,11 @@ $result = $conn->query($sql);
             <div class="row row-cols-1 row-cols-md-3 g-4 my-5 mx-5">
                 <div class="col">
                     <div class="card">
-                        <img src="<?php echo $gambar['gambar']?>" class="card-img-top" alt="Gambar">
+                        <img src="<?php echo $row['gambar']?>" class="card-img-top" alt="Gambar">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $row['judul_buku'] ?></h5>
                             <p class="card-text"><?php echo  $row['deskripsi'] ?></p>
-                            <a type="submit" class="btn btn-primary" name="submit" value="submit" href="Alfin_Halaman Detail Buku.php?id=<?=$row['id_buku']?>">Tampilkan Lebih Lanjut</a>
+                            <a type="submit" class="btn btn-primary" name="submit" value="submit" href="Alfin_Halaman Detail Buku.php?id_buku=<?=$row['id_buku']?>">Tampilkan Lebih Lanjut</a>
                         </div>
                     </div>
                 </div>

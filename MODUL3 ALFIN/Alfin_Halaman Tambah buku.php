@@ -17,7 +17,7 @@
             <a class="navbar-brand" href="Alfin_Home.php">
                 <img src="logo.png" alt="" width="130" length="150">
             </a>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end"D>
                 <button class="btn btn-primary me-md-2" type="button">Tambahkan Buku</button>
             </div>
         </div>

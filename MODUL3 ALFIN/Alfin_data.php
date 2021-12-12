@@ -13,7 +13,7 @@ $tag        = implode(", ", $_POST['tags']);
 $gambar     = $_POST['gambar'];
 
 // Query  
-$sql = "DELETE INTO buku_table (judul_buku, penulis_buku, tahun_terbit, deskripsi, gambar, tag, bahasa) 
+$sql = "INSERT INTO buku_table (judul_buku, penulis_buku, tahun_terbit, deskripsi, gambar, tag, bahasa) 
         VALUES ('$judul', '$penulis', '$tahun', '$deskripsi', '$gambar', '$tag', '$bahasa')";
 
 // Query status

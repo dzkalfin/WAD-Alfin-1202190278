@@ -45,7 +45,7 @@
     </div>
     <div class="row border my-3 mx-3">
       <div class="col">
-        <img src="<?php echo $building?>.jpg" class="card-img-top " style="padding-top: 25%;" alt="Nusantara Hall">
+        <img src="img/<?php echo $building?>.jpeg" class="card-img-top " style="padding-top: 25%;" alt="Nusantara Hall">
       </div>
       <div class="col">
         <form action="mybooking.php" method="POST">
@@ -87,7 +87,7 @@
             </label>
           </div>
           <div class="d-grid gap-2 my-2">
-            <button type="submit" class="btn btn-primary" href="mybooking.php">Book</button>
+            <button type="submit" class="btn btn-primary">Book</button>
           </div>
         </form>
       </div>

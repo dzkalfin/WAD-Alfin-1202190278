@@ -95,7 +95,7 @@
                 <li class="list-group-item" style="color: #2ecc71;"><b>Covid-19 Health Protocol</b></li>
               </ul>
               <div class="card-footer text-center">
-                <a href="booking.php?BuildingType=Gedung+Serbaguna" class="btn btn-primary">Book Now</a>
+                <button href="booking.php?BuildingType=Gedung+Serba+Guna" class="btn btn-primary">Book Now</button>
               </div>
             </div>
           </div>

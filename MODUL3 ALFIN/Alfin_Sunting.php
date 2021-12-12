@@ -11,7 +11,7 @@ $bahasa         = $_POST['input_bahasa'];
 $query  = "UPDATE buku_table 
             SET judul_buku='$judulbuku', tahun_terbit='$tahun_terbit', deskripsi='$deskripsi', bahasa='$bahasa' 
             WHERE id_buku='$id_buku'";
-// $update = mysqli_query($conn, $query);
+// $update = mysqli_query($conn, $update);
 
 // Query status
 // if ($conn->query($query) === TRUE) {

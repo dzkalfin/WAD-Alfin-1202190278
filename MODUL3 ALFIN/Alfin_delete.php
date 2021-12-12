@@ -7,7 +7,7 @@ $id_buku = $_GET['id_buku'];
 
 // Query  
 $sql    = "DELETE FROM buku_table WHERE id_buku='$id_buku'";
-$update = mysqli_query($con, $sql);
+$update = mysqli_query($conn, $sql);
 
 // Close connection
 $conn->close();

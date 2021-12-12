@@ -23,7 +23,7 @@
   $time = $_POST['time'];
   $durasi = $_POST['durasi'];
   $telpon = $_POST['telpon'];
-  $build = $_POST['BuildingType'];
+  $building = $_POST['BuildingType'];
   $service = $_POST['service[]'];
   $selisih = date('H:i', strtotime("$time+$durasi hour"));
   $list = array();
@@ -72,7 +72,6 @@
 
 
   ?>
-  
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -121,13 +120,13 @@
           <td>
             <?php echo $date ?> <?php echo $selisih ?>
           </td>
-          <td><?php echo $build ?></td>
+          <td><?php echo $building ?></td>
           <td>
             <?php echo $telpon ?>
           </td>
-          <td></td> mysqli($conn, $query);
+          <td></td>
           <td>
-            <?php if ($build == "Nusantara Hall") {
+            <?php if ($building == "Nusantara Hall") {
               if (empty($list)) {
                 echo "$$nus7";
               } elseif (in_array("Catering", $list) and in_array("Decoration", $list) and in_array("Sound System", $list)) {
@@ -145,7 +144,7 @@
               } elseif (in_array("Catering", $list) and !in_array("Decoration", $list) and !in_array("Sound System", $list)) {
                 echo "$$nus1";
               }
-            } elseif ($Build == "Garuda Hall") {
+            } elseif ($BuildingType == "Garuda Hall") {
               if (empty($list)) {
                 echo "$$gar7";
               } elseif (in_array("Catering", $list) and in_array("Decoration", $list) and in_array("Sound System", $list)) {
@@ -163,7 +162,7 @@
               } elseif (in_array("Catering", $list) and !in_array("Decoration", $list) and !in_array("Sound System", $list)) {
                 echo "$$gar1";
               }
-            } elseif ($Build == "Garuda Hall") {
+            } elseif ($BuildingType == "Garuda Hall") {
               if (empty($list)) {
                 echo "$$gsg7";
               } elseif (in_array("Catering", $list) and in_array("Decoration", $list) and in_array("Sound System", $list)) {
