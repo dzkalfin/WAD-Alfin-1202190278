@@ -10,7 +10,7 @@ function login($request)
     $emailcek = "SELECT * FROM users WHERE email='$email'";
     $select = mysqli_query($conn, $emailcek);
 
-    if(mysqli_num_rows($select) == 1) {
+    if(mysqli_num_rows($select) == 2) {
         $result = mysqli_fetch_assoc($select);
 
         if (password_verify($password, $result['password'])) {

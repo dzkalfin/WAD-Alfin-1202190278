@@ -1,7 +1,7 @@
 <?php function registrasi($request)
 
 {
-    global $conn;
+    global $con;
 
     $nama       =$request['nama'];
     $email      =$request['email'];
